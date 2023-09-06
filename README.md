@@ -42,6 +42,6 @@ To download the course materials to your local machine, you can use `git` as fol
 
 ```bash
 git clone https://github.com/yourusername/repositoryname.git
-
+```
 
 ![](d2.svg)
