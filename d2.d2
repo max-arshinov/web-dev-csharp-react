@@ -1,0 +1,201 @@
+title: |md
+  # .NET Web Dev
+| {near: top-center}
+
+classes {
+    goal {
+        style: {
+            double-border: true
+            stroke: "#f4a261"
+        }
+        width: 150
+        height: 120
+    }
+}
+
+s21-1: Устройство компьютера {
+    link: google.com
+}
+
+s21-2: Версии и устройство платформы .NET
+
+s21-3: .NET	Memory model
+s21-1 -> s21-3
+s21-2 -> s21-3
+
+s21-4: Функциональное программирование на F\#
+s21-2 -> s21-4
+
+s21-5: Монадки
+s21-4 -> s21-5
+
+s21-6: Async await
+s21-3 -> s21-6
+s21-5 -> s21-6
+
+s21-7: Reflection + Serialization / Deserialization
+s21-2 -> s21-7
+
+s21-w: Основы Web и ASP.NET Core
+s21-w.class: goal
+s21-6 -> s21-w
+
+s21-9: Dependency Injection
+
+s21-10: Expression Trees
+s21-2 -> s21-10
+s21-7 -> s21-10
+
+s21-11: IQueryable, IQueryProvider
+s21-10 -> s21-11
+
+s21-12: Entity Framework
+s21-9 -> s21-12
+s21-11 -> s21-12
+
+s21-g: ASP.NET Core MVC и WebAPI
+s21-g.style.double-border: true
+s21-g.style.stroke: "#f4a261"
+
+s21-w -> s21-g
+s21-9 -> s21-g
+s21-12 -> s21-g
+
+#s21-14: Dynamic 
+#s21-2 -> s21-14
+
+#s21-15: Бенчмарки	
+
+s21-16: Память
+s21-1 -> s21-16
+
+s21-17: Особые исключения
+s21-12 -> s21-17
+s21-16 -> s21-17
+
+#s22-1: Командная работа: оценка и планирование
+#s22-2: Spec by Example
+#s22-1 -> s22-2
+
+s22-3: HTML и CSS
+
+s22-4: Основы JS
+
+s22-5: React
+
+s22-3 -> s22-5
+s22-4 -> s22-5
+
+s22-6: npm
+s22-4 -> s22-6
+
+s22-7: SPA Service
+s22-6 -> s22-7
+s21-w -> s22-7
+
+s22-rest: REST и Swagger
+s21-g -> s22-rest
+
+s22-10: Web Auth: Cookies, Tokens, JWT
+s21-w -> s22-10
+
+s22-oauth: OAuth2 и OIDC
+s22-10 -> s22-oauth
+
+s22-12: Microsoft Identity
+s21-12 -> s22-12
+
+s22-13: ASP.NET Core Authentication
+s21-g -> s22-13
+s22-10 -> s22-13
+s22-12 -> s22-13
+
+s22-d: Docker
+
+s22-g: SPA
+s22-g.style.double-border: true
+s22-g.style.stroke: "#f4a261"
+
+s21-g -> s22-g
+s22-5 -> s22-g 
+s22-7 -> s22-g
+s22-rest -> s22-g
+s22-12 -> s22-g
+s22-13 -> s22-g
+s22-d -> s22-g
+
+s31-1: Документирование архитектуры
+
+s31-a: Стили архитектур
+s31-1 -> s31-a
+
+s31-3: Background Services
+s21-w -> s31-3
+s31-a -> s31-3
+
+s31-4: Pub/Sub
+s31-3 -> s31-4
+
+s31-mb: Message Broker
+s31-4 -> s31-mb
+
+s31-r: RabbitMQ
+s31-mb -> s31-r
+
+s31-kaf: Kafka
+s31-mb -> s31-kaf
+
+s31-mt: MassTransit
+s31-r -> s31-mt
+s31-k -> s31-mt
+
+s31-p: Паттерны
+
+s31-d: DDD
+s31-a -> s31-d
+
+s31-c: CQRS
+s31-c.style.double-border: true
+s31-c.style.stroke: "#f4a261"
+s31-4 -> s31-c
+s31-mt -> s31-c
+s31-d -> s31-c
+s31-p -> s31-c
+
+s31-k: Kubernetes
+s22-d -> s31-k
+
+s31-nosql: NoSQL
+
+s31-mongo: MongoDB
+s31-nosql -> s31-mongo
+
+s31-ch: ClickHouse
+s31-nosql -> s31-ch
+
+s31-el: ElasticSearch
+s31-nosql -> s31-el
+
+s31-ser: Serilog
+
+s31-obs: Observabiliy
+s31-ser -> s31-obs
+s31-el -> s31-obs
+
+s31-gql: GraphQL
+s22-rest -> s31-gql
+
+s32-mob: Mobile
+s31-gql -> s32-mob
+
+s31-g: Microservice
+s31-g.style.double-border: true
+s31-g.style.stroke: "#f4a261"
+s31-gql -> s31-g
+s22-g -> s31-g
+s22-oauth -> s31-g
+s31-obs -> s31-g
+s31-k -> s31-g
+s31-c -> s31-g
+s31-nosql -> s31-g
+s32-mob -> s31-g
