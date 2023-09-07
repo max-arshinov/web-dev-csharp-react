@@ -1,23 +1,45 @@
-# Домашняя работа для третьего учебного семестра (2 год обучения, 1 семестр)
+# 2.1 Dotnet + Backend
+![](./2.1.svg)
 
-![.NET](https://github.com/<Вставьте свой ник github>/dotnet-homeworks-2/actions/workflows/dotnet.yml/badge.svg)
-[![codecov](https://codecov.io/gh/max-arshinov/dotnet-homeworks-2/branch/master/graph/badge.svg?token={token})](https://codecov.io/gh/max-arshinov/dotnet-homeworks-2)
+## Modules
 
-## Как устроены Actions
-1. ***build***: *Проверка: собирается ли проект.*
-2. ***test*** и ***test-report***: *Все тесты должны проходить*
-4. ***codecov***: *Программа должна быть на 100% покрыта тестами.* 
-Тесты, которые уже были написаны заранее, проверяют работоспособность вашей программы:  верно ли выполнено задание.
-Однако при реализации вы можете добавлять свои классы/сервисы и вот для них вы должны написать свои собственные тесты.
-5. После этого в рамках локального репозитория создаётся пулл реквест из ветки с решённым домашним заданием в master. Далее произойдёт автоматический запуск всех workflow:
-- если все workflow успешно отработают , то просите ментора провести code-review. 
-- иначе смотрите логи workflow, который не отработал и исправляете проблему.
+#### **Semester 21**
 
-## Как выполнить домашку
-1. В файле Tests.RunLogic/TestConfig.cs проставить номер текущей выполняемой домашки. Т.е. если выполняете домашку 1, то ставите HomeworkProgress(Homeworks.HomeWork1) и т.д.
-2. Открываете нужную папку с домашкой и знакомитесь с постановкой задачи. Выполняете поставленные требования.
-3. Если пишете свои тесты, не забывайте поставить им кастомный xUnit-атрибут из Tests.RunLogic/Attributes по аналогии с уже написанными тестами. Если ваш тест - Theory - добавляете аттрибут [HomeworkTheory(Homeworks.HomeWork*)], если Fact - [Homework(Homeworks.HomeWork*)]. Подробнее о различиях можете почитать [здесь](https://codebots.com/docs/what-is-xunit)
+1. **[Computer Device Structure](./2.1.1.md)**
+    - Overview of computer architecture and its components.
 
-- Если ваша ide говорит о проблемах с зависимостями во второй домашке, просто сбилдите проект - ошибки должны исчезнуть. Это из-за IL. Узнаете что это на соответствующей паре.
-- [дополнительные инструкции по работе с репозиторием](https://docs.google.com/document/d/1DPAfO-v2acR-CmLviX3qCnTBwUYPyipARdPjUjTZKdo/edit?usp=sharing)
-- Для чего все эти атрибуты? - Чтобы тесты с домашками, которые вы ещё не выполнили, не влияли на прохождение github workflow, т.е. чтобы тесты следующих домашек не валились, пока вы до них не дойдёте.
+2. **.NET Platform Versions and Structure**
+    - Detailed study of various .NET platform versions and their structural overview.
+
+3. **.NET Memory Model**
+    - Understanding the memory model in .NET and its implications on programming.
+
+4. **Functional Programming in F#**
+    - An introduction to functional programming using the F# language.
+
+5. **Monads**
+    - Deep dive into the concept of monads and their usage in functional programming.
+
+6. **Async Await**
+    - Understanding asynchronous programming in .NET using the async and await keywords.
+
+7. **Reflection + Serialization/Deserialization**
+    - Explore the concepts of reflection and serialization/deserialization in .NET.
+
+8. **Web Basics and ASP.NET Core**
+    - Introduction to web development and utilizing ASP.NET Core for backend development.
+
+9. **Dependency Injection**
+    - Learn about the dependency injection pattern and its implementation in .NET.
+
+10. **Expression Trees**
+- Deep understanding of expression trees and how to work with them in .NET.
+
+11. **IQueryable, IQueryProvider**
+- Understanding the functionalities and use cases of IQueryable and IQueryProvider interfaces in .NET.
+
+12. **Entity Framework**
+- Learn to work with databases using the Entity Framework in .NET.
+
+13. **ASP.NET Core MVC and WebAPI**
+- Delving into developing web applications using the MVC pattern and creating APIs with WebAPI.

@@ -1,3 +1,0 @@
-﻿open System
-
-(NotImplementedException() |> raise)       
