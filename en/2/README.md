@@ -79,17 +79,5 @@
 12. **SPA**
 - Learn to develop modern web applications using Single Page Application (SPA) architecture.
 
-#### **Semester 31**
-
-1. **Documenting Architecture**
-    - Introduction to architectural documentation and its importance in software development.
-
-2. **Architecture Styles**
-    - Learning different architectural styles and their implications on software design.
-
-3. **Background Services**
-    - Understanding the concept of background services in ASP.NET Core and how to implement them.
-
-(Continue with other modules)
 
 ---
