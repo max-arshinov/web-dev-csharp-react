@@ -5,7 +5,7 @@
 
 #### **Semester 21**
 
-1. **[Computer Device Structure](google.com)**
+1. **[Computer Device Structure](./2.1.1.md)**
     - Overview of computer architecture and its components.
 
 2. **.NET Platform Versions and Structure**
