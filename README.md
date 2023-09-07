@@ -1,6 +1,7 @@
 # Web Development with .NET and React: A Hands-On Course
 
-## Description
+Other languages:
+- [Русский](./theory/ru)
 
 Welcome to the "Web Development with .NET and React" course repository, a comprehensive and hands-on course designed to introduce you to the modern technologies and best practices involved in building robust web applications with .NET and React. Designed to foster a practical understanding through active involvement, this course demands you to roll up your sleeves and code.
 
