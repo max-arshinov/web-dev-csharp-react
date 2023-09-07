@@ -1,5 +1,7 @@
 # 2
 
+[Prerequisites](../prerequisites)
+
 #### **Semester 22**
 
 1. **HTML and CSS**
