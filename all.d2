@@ -41,17 +41,17 @@ dotnet.s21-2 -> dotnet.s21-mm
 dotnet.fp.s21-4: Functional Programming in F\#
 dotnet.s21-2 -> dotnet.fp.s21-4
 
-dotnet.fp.s21-monads: Монадки
+dotnet.fp.s21-monads: Monads
 dotnet.fp.s21-4 -> dotnet.fp.s21-monads
 
-dotnet.s21-async: Async await
+dotnet.s21-async: async/await
 dotnet.s21-mm -> dotnet.s21-async
 dotnet.fp.s21-monads -> dotnet.s21-async
 
-dotnet.s21-reflection: Reflection + Serialization / Deserialization
+dotnet.s21-reflection: Reflection + Serialization/Deserialization
 dotnet.s21-2 -> dotnet.s21-reflection
 
-back.aspnet.s21-w: Основы Web и ASP.NET Core
+back.aspnet.s21-w: ASP.NET Core Basics
 back.aspnet.s21-w.class: goal
 dotnet.s21-async -> back.aspnet.s21-w
 
@@ -68,9 +68,8 @@ back.orm.s21-ef: Entity Framework
 back.aspnet.s21-di -> back.orm.s21-ef
 back.orm.s21-q -> back.orm.s21-ef
 
-back.aspnet.s21-g: ASP.NET Core MVC и Webback.api
-back.aspnet.s21-g.style.double-border: true
-back.aspnet.s21-g.style.stroke: "#f4a261"
+back.aspnet.s21-g: ASP.NET Core MVC & WebAPI
+back.aspnet.s21-g.class: goal
 
 dotnet.s21-exception -> back.aspnet.s21-g
 back.aspnet.s21-w -> back.aspnet.s21-g
@@ -82,10 +81,10 @@ back.orm.s21-ef -> back.aspnet.s21-g
 
 #dotnet.s21-15: Бенчмарки	
 
-dotnet.s21-memory: Память
+dotnet.s21-memory: Memory
 dotnet.s21-1 -> dotnet.s21-memory
 
-dotnet.s21-exception: Особые исключения
+dotnet.s21-exception: Exceptional Exceptions
 back.orm.s21-ef -> dotnet.s21-exception
 dotnet.s21-memory -> dotnet.s21-exception
 
@@ -93,9 +92,9 @@ dotnet.s21-memory -> dotnet.s21-exception
 #s22-2: Spec by Example
 #s22-1 -> s22-2
 
-front.s22-3: HTML и CSS
+front.s22-3: HTML & CSS
 
-front.s22-js: Основы JS
+front.s22-js: JavaScript
 
 front.s22-5: React
 
@@ -115,7 +114,7 @@ back.aspnet.s21-g -> back.api.s22-rest
 back.auth.s22-wa: Web Auth: Cookies, Tokens, JWT
 back.aspnet.s21-w -> back.auth.s22-wa
 
-back.auth.s22-oauth: OAuth2 и OIDC
+back.auth.s22-oauth: OAuth2 & OIDC
 back.auth.s22-wa -> back.auth.s22-oauth
 
 back.auth.s31-identity: Microsoft Identity
@@ -142,7 +141,7 @@ ms.containers.s22-d -> front.s22-g
 
 arch.s31-1: Документирование архитектуры
 
-arch.s31-a: Стили архитектур
+arch.s31-a: Styles of Architecture
 arch.s31-1 -> arch.s31-a
 arch.s32-p -> arch.s31-a
 
@@ -163,7 +162,7 @@ ms.s32-mb.s32-mt: MassTransit
 ms.s32-mb.s32-r -> ms.s32-mb.s32-mt
 ms.s32-mb.s32-kaf -> ms.s32-mb.s32-mt
 
-arch.s32-p: Паттерны
+arch.s32-p: Design Patterns
 
 arch.s32-solid: SOLID
 arch.s32-p -> arch.s32-solid
@@ -201,7 +200,7 @@ back.api.s22-rest -> back.api.s31-ps
 s32-mob: Mobile
 back.api.s31-ps -> s32-mob
 
-ms.s32-g: Microservices
+ms.s32-g: MicroServices
 ms.s32-g.style.double-border: true
 ms.s32-g.style.stroke: "#f4a261"
 back.api.s31-ps -> ms.s32-g
