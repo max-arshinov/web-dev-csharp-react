@@ -1,0 +1,75 @@
+title: |md
+  # .NET Web Dev
+| {near: top-center}
+
+classes {
+    goal {
+        style: {
+            double-border: true
+            stroke: "#f4a261"
+        }
+        width: 150
+        height: 120
+    }
+}
+
+dotnet.s21-1: Устройство компьютера {
+    link: google.com
+}
+
+dotnet.s21-2: Версии и устройство платформы .NET
+
+dotnet.s21-mm: .NET	Memory model
+dotnet.s21-1 -> dotnet.s21-mm
+dotnet.s21-2 -> dotnet.s21-mm
+
+dotnet.fp.s21-4: Функциональное программирование на F\#
+dotnet.s21-2 -> dotnet.fp.s21-4
+
+dotnet.fp.s21-monads: Монадки
+dotnet.fp.s21-4 -> dotnet.fp.s21-monads
+
+dotnet.s21-async: Async await
+dotnet.s21-mm -> dotnet.s21-async
+dotnet.fp.s21-monads -> dotnet.s21-async
+
+dotnet.s21-reflection: Reflection + Serialization / Deserialization
+dotnet.s21-2 -> dotnet.s21-reflection
+
+back.aspnet.s21-w: Основы Web и ASP.NET Core
+back.aspnet.s21-w.class: goal
+dotnet.s21-async -> back.aspnet.s21-w
+
+back.aspnet.s21-di: Dependency Injection
+
+back.orm.s21-et: Expression Trees
+dotnet.s21-2 -> back.orm.s21-et
+dotnet.s21-reflection -> back.orm.s21-et
+
+back.orm.s21-q: IQueryable, IQueryProvider
+back.orm.s21-et -> back.orm.s21-q
+
+back.orm.s21-ef: Entity Framework
+back.aspnet.s21-di -> back.orm.s21-ef
+back.orm.s21-q -> back.orm.s21-ef
+
+back.aspnet.s21-g: ASP.NET Core MVC и Webback.api
+back.aspnet.s21-g.style.double-border: true
+back.aspnet.s21-g.style.stroke: "#f4a261"
+
+dotnet.s21-exception -> back.aspnet.s21-g
+back.aspnet.s21-w -> back.aspnet.s21-g
+back.aspnet.s21-di -> back.aspnet.s21-g
+back.orm.s21-ef -> back.aspnet.s21-g
+
+#dotnet.s21-14: Dynamic 
+#dotnet.s21-2 -> dotnet.s21-14
+
+#dotnet.s21-15: Бенчмарки	
+
+dotnet.s21-memory: Память
+dotnet.s21-1 -> dotnet.s21-memory
+
+dotnet.s21-exception: Особые исключения
+back.orm.s21-ef -> dotnet.s21-exception
+dotnet.s21-memory -> dotnet.s21-exception

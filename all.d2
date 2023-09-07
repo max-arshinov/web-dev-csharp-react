@@ -1,0 +1,214 @@
+title: |md
+  # .NET Web Dev
+| {near: top-center}
+
+classes {
+    goal {
+        style: {
+            double-border: true
+            stroke: "#f4a261"
+        }
+    }
+}
+
+dotnet: Dotnet
+dotnet.fp: Functional Programming
+
+front: Frontend
+
+back: Backend
+back.aspnet: ASP.NET Core
+back.orm: ORM
+back.auth: Authentication
+back.api: API
+
+ms: Distributed Applications
+ms.logs: Logging & Observability
+ms.containers: Containers
+
+arch: Architecture
+
+dotnet.s21-1: Computer Internals {
+    link: google.com
+}
+
+dotnet.s21-2: .NET Internals & Versions 
+
+dotnet.s21-mm: .NET	Memory model
+dotnet.s21-1 -> dotnet.s21-mm
+dotnet.s21-2 -> dotnet.s21-mm
+
+dotnet.fp.s21-4: Functional Programming in F\#
+dotnet.s21-2 -> dotnet.fp.s21-4
+
+dotnet.fp.s21-monads: Монадки
+dotnet.fp.s21-4 -> dotnet.fp.s21-monads
+
+dotnet.s21-async: Async await
+dotnet.s21-mm -> dotnet.s21-async
+dotnet.fp.s21-monads -> dotnet.s21-async
+
+dotnet.s21-reflection: Reflection + Serialization / Deserialization
+dotnet.s21-2 -> dotnet.s21-reflection
+
+back.aspnet.s21-w: Основы Web и ASP.NET Core
+back.aspnet.s21-w.class: goal
+dotnet.s21-async -> back.aspnet.s21-w
+
+back.aspnet.s21-di: Dependency Injection
+
+back.orm.s21-et: Expression Trees
+dotnet.s21-2 -> back.orm.s21-et
+dotnet.s21-reflection -> back.orm.s21-et
+
+back.orm.s21-q: IQueryable, IQueryProvider
+back.orm.s21-et -> back.orm.s21-q
+
+back.orm.s21-ef: Entity Framework
+back.aspnet.s21-di -> back.orm.s21-ef
+back.orm.s21-q -> back.orm.s21-ef
+
+back.aspnet.s21-g: ASP.NET Core MVC и Webback.api
+back.aspnet.s21-g.style.double-border: true
+back.aspnet.s21-g.style.stroke: "#f4a261"
+
+dotnet.s21-exception -> back.aspnet.s21-g
+back.aspnet.s21-w -> back.aspnet.s21-g
+back.aspnet.s21-di -> back.aspnet.s21-g
+back.orm.s21-ef -> back.aspnet.s21-g
+
+#dotnet.s21-14: Dynamic 
+#dotnet.s21-2 -> dotnet.s21-14
+
+#dotnet.s21-15: Бенчмарки	
+
+dotnet.s21-memory: Память
+dotnet.s21-1 -> dotnet.s21-memory
+
+dotnet.s21-exception: Особые исключения
+back.orm.s21-ef -> dotnet.s21-exception
+dotnet.s21-memory -> dotnet.s21-exception
+
+#s22-1: Командная работа: оценка и планирование
+#s22-2: Spec by Example
+#s22-1 -> s22-2
+
+front.s22-3: HTML и CSS
+
+front.s22-js: Основы JS
+
+front.s22-5: React
+
+front.s22-3 -> front.s22-5
+front.s22-js -> front.s22-5
+
+front.s22-6: npm
+front.s22-js -> front.s22-6
+
+back.aspnet.s22-spa: SPA Service
+front.s22-6 -> back.aspnet.s22-spa
+back.aspnet.s21-w -> back.aspnet.s22-spa
+
+back.api.s22-rest: REST и Swagger
+back.aspnet.s21-g -> back.api.s22-rest
+
+back.auth.s22-wa: Web Auth: Cookies, Tokens, JWT
+back.aspnet.s21-w -> back.auth.s22-wa
+
+back.auth.s22-oauth: OAuth2 и OIDC
+back.auth.s22-wa -> back.auth.s22-oauth
+
+back.auth.s31-identity: Microsoft Identity
+back.orm.s21-ef -> back.auth.s31-identity
+
+back.auth.s22-13: ASP.NET Core Authentication
+back.aspnet.s21-g -> back.auth.s22-13
+back.auth.s22-wa -> back.auth.s22-13
+back.auth.s31-identity -> back.auth.s22-13
+
+ms.containers.s22-d: Docker
+
+front.s22-g: SPA
+front.s22-g.style.double-border: true
+front.s22-g.style.stroke: "#f4a261"
+
+back.aspnet.s21-g -> front.s22-g
+front.s22-5 -> front.s22-g 
+back.aspnet.s22-spa -> front.s22-g
+back.api.s22-rest -> front.s22-g
+back.auth.s31-identity -> front.s22-g
+back.auth.s22-13 -> front.s22-g
+ms.containers.s22-d -> front.s22-g
+
+arch.s31-1: Документирование архитектуры
+
+arch.s31-a: Стили архитектур
+arch.s31-1 -> arch.s31-a
+arch.s32-p -> arch.s31-a
+
+back.aspnet.s31-bs: Background Services
+back.aspnet.s21-w -> back.aspnet.s31-bs
+arch.s31-a -> back.aspnet.s31-bs
+
+arch.s31-ps: Pub/Sub
+arch.s31-a -> arch.s31-ps
+back.aspnet.s31-bs -> arch.s31-ps
+
+ms.s32-mb: Message Broker
+arch.s31-ps -> ms.s32-mb
+
+ms.s32-mb.s32-r: RabbitMQ
+ms.s32-mb.s32-kaf: Kafka
+ms.s32-mb.s32-mt: MassTransit
+ms.s32-mb.s32-r -> ms.s32-mb.s32-mt
+ms.s32-mb.s32-kaf -> ms.s32-mb.s32-mt
+
+arch.s32-p: Паттерны
+
+arch.s32-solid: SOLID
+arch.s32-p -> arch.s32-solid
+arch.s32-solid ->back.aspnet.s21-di
+
+arch.s32-d: DDD
+arch.s31-a -> arch.s32-d
+
+arch.s32-c: CQRS
+arch.s32-c.class: goal
+arch.s31-a -> arch.s32-c
+arch.s31-ps -> arch.s32-c
+ms.s32-mb.s32-mt -> arch.s32-c
+arch.s32-d -> arch.s32-c
+arch.s32-p -> arch.s32-c
+
+ms.containers.s32-k: Kubernetes
+ms.containers.s22-d -> ms.containers.s32-k
+
+ms.s32-nosql: NoSQL
+
+ms.s32-nosql.s32-mongo: MongoDB
+ms.s32-nosql.s32-ch: ClickHouse
+ms.s32-nosql.s32-el: ElasticSearch
+
+ms.logs.s32-ser: Serilog
+
+ms.logs.s32-obs: Observabiliy
+ms.logs.s32-ser -> ms.logs.s32-obs
+ms.s32-nosql.s32-el -> ms.logs.s32-obs
+
+back.api.s31-ps: GraphQL
+back.api.s22-rest -> back.api.s31-ps
+
+s32-mob: Mobile
+back.api.s31-ps -> s32-mob
+
+ms.s32-g: Microservices
+ms.s32-g.style.double-border: true
+ms.s32-g.style.stroke: "#f4a261"
+back.api.s31-ps -> ms.s32-g
+front.s22-g -> ms.s32-g
+back.auth.s22-oauth -> ms.s32-g
+ms.logs.s32-obs -> ms.s32-g
+ms.containers.s32-k -> ms.s32-g
+arch.s32-c -> ms.s32-g
+ms.s32-nosql -> ms.s32-g
+s32-mob -> ms.s32-g

@@ -60,7 +60,7 @@
 #### **Semester 32**
 
 1. **Mobile**
-    - Introduction to mobile application development and how to integrate it with your .NET backend.
+    - Introduction to mobile application development and how to integrate it with your .NET back.
 
 2. **Microservice**
     - Deep dive into microservice architecture and learn to implement it using .NET and other modern tools.
