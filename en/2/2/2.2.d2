@@ -1,0 +1,64 @@
+classes {
+    goal {
+        style: {
+            double-border: true
+            stroke: "#f4a261"
+        }
+    }
+}
+
+back.aspnet.s21-w: ASP.NET Core Basics
+back.aspnet.s21-w.class: goal
+
+back.orm.s21-ef: Entity Framework
+back.orm.s21-ef -> back.aspnet.s21-g
+
+back.aspnet.s21-g: ASP.NET Core MVC & WebAPI
+back.aspnet.s21-g.class: goal
+
+back.orm.s21-ef -> back.aspnet.s21-g
+
+front: Frontend
+
+front.s22-3: HTML & CSS
+
+front.s22-js: JavaScript
+
+front.s22-5: React
+
+front.s22-3 -> front.s22-5
+front.s22-js -> front.s22-5
+
+front.s22-6: npm
+front.s22-js -> front.s22-6
+
+back.aspnet.s22-spa: SPA Service
+front.s22-6 -> back.aspnet.s22-spa
+back.aspnet.s21-w -> back.aspnet.s22-spa
+
+back.api.s22-rest: REST и Swagger
+back.aspnet.s21-g -> back.api.s22-rest
+
+back.auth.s22-wa: Web Auth: Cookies, Tokens, JWT
+back.aspnet.s21-w -> back.auth.s22-wa
+
+back.auth.s22-oauth: OAuth2 & OIDC
+back.auth.s22-wa -> back.auth.s22-oauth
+
+back.auth.s31-identity: Microsoft Identity
+back.orm.s21-ef -> back.auth.s31-identity
+
+back.auth.s22-13: ASP.NET Core Authentication
+back.aspnet.s21-g -> back.auth.s22-13
+back.auth.s22-wa -> back.auth.s22-13
+back.auth.s31-identity -> back.auth.s22-13
+
+front.s22-g: SPA
+front.s22-g.class: goal
+
+back.aspnet.s21-g -> front.s22-g
+front.s22-5 -> front.s22-g 
+back.aspnet.s22-spa -> front.s22-g
+back.api.s22-rest -> front.s22-g
+back.auth.s31-identity -> front.s22-g
+back.auth.s22-13 -> front.s22-g
