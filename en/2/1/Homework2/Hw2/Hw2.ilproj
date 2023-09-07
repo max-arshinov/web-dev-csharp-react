@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk.IL">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>Hw2</RootNamespace>
+        <MicrosoftNetCoreIlasmPackageVersion>6.0.0</MicrosoftNetCoreIlasmPackageVersion>
+        <ProduceReferenceAssembly>..\Hw2\obj\Debug\net6.0\</ProduceReferenceAssembly>
+    </PropertyGroup>
+</Project>
