@@ -1,7 +1,7 @@
 using System.Globalization;
 using System.Net;
 using Hw6;
-using Tests.RunLogic.Attributes;
+using TestInfrastructure.Attributes;
 
 namespace Tests.CSharp.Homework6;
 

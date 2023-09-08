@@ -1,7 +1,7 @@
 using System.Reflection;
 using Xunit;
 
-namespace Tests.RunLogic.Attributes;
+namespace TestInfrastructure.Attributes;
 
 public class HomeworkAttribute : FactAttribute
 {

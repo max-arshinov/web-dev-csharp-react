@@ -1,7 +1,7 @@
 using System.Text;
 using JetBrains.dotMemoryUnit;
 using Microsoft.AspNetCore.Mvc.Testing;
-using Tests.RunLogic.Attributes;
+using TestInfrastructure.Attributes;
 using Xunit.Abstractions;
 
 namespace Tests.CSharp.Homework13;

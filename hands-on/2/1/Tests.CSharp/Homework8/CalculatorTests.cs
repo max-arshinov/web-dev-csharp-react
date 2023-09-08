@@ -1,5 +1,5 @@
 using Hw8.Calculator;
-using Tests.RunLogic.Attributes;
+using TestInfrastructure.Attributes;
 
 namespace Tests.CSharp.Homework8;
 

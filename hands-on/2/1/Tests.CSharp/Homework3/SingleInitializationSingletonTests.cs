@@ -1,4 +1,4 @@
-using Tests.RunLogic.Attributes;
+using TestInfrastructure.Attributes;
 
 namespace Tests.CSharp.Homework3;
 

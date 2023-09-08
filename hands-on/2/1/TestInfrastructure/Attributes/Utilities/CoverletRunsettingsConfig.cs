@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Tests.RunLogic.Attributes.Utilities;
+namespace TestInfrastructure.Attributes.Utilities;
 
 public static class CoverletRunsettingsConfig
 {
@@ -56,7 +56,7 @@ public static class CoverletRunsettingsConfig
     
     private static string GenerateUpdatedExcludesContent(string userCustomExcludes, int homeworkNumber)
     {
-        var updatedExcludeByFileContent = new StringBuilder("**/Tests.RunLogic/**,**/*.cshtml,**/Hw*/Program.cs,**/Hw*/Program.fs");
+        var updatedExcludeByFileContent = new StringBuilder("**/TestInfrastructure/**,**/*.cshtml,**/Hw*/Program.cs,**/Hw*/Program.fs");
         if (!string.IsNullOrWhiteSpace(userCustomExcludes))
             updatedExcludeByFileContent.Append(',');
         updatedExcludeByFileContent.Append(userCustomExcludes);

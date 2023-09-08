@@ -1,5 +1,5 @@
 using Hw2;
-using Tests.RunLogic.Attributes;
+using TestInfrastructure.Attributes;
 
 namespace Tests.CSharp.Homework2;
 

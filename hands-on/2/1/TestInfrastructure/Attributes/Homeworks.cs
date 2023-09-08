@@ -1,4 +1,4 @@
-namespace Tests.RunLogic.Attributes;
+namespace TestInfrastructure.Attributes;
 
 public enum Homeworks : byte
 {

@@ -29,7 +29,7 @@
     <ItemGroup>
       <ProjectReference Include="..\Homework4\Hw4\Hw4.fsproj" />
       <ProjectReference Include="..\Homework5\Hw5\Hw5.fsproj" />
-      <ProjectReference Include="..\Tests.RunLogic\Tests.RunLogic.csproj" />
+      <ProjectReference Include="..\TestInfrastructure\TestInfrastructure.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using Hw3.Mutex;
-using Tests.RunLogic.Attributes;
+using TestInfrastructure.Attributes;
 using Xunit.Abstractions;
 
 namespace Tests.CSharp.Homework3;

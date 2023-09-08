@@ -34,7 +34,7 @@
       <ProjectReference Include="..\Homework7\Hw7\Hw7.csproj" />
       <ProjectReference Include="..\Homework8\Hw8\Hw8.csproj" />
       <ProjectReference Include="..\Homework9\Hw9\Hw9.csproj" />
-      <ProjectReference Include="..\Tests.RunLogic\Tests.RunLogic.csproj" />
+      <ProjectReference Include="..\TestInfrastructure\TestInfrastructure.csproj" />
     </ItemGroup>
 
 </Project>

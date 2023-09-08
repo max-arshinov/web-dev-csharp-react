@@ -1,6 +1,6 @@
 using Hw8.Calculator;
 using Microsoft.AspNetCore.Mvc.Testing;
-using Tests.RunLogic.Attributes;
+using TestInfrastructure.Attributes;
 
 namespace Tests.CSharp.Homework8;
 

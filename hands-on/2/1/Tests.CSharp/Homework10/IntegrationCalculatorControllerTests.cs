@@ -2,7 +2,7 @@ using System.Globalization;
 using System.Net.Http.Json;
 using Hw10.Dto;
 using Hw10.ErrorMessages;
-using Tests.RunLogic.Attributes;
+using TestInfrastructure.Attributes;
 
 namespace Tests.CSharp.Homework10;
 

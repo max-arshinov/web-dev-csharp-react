@@ -1,6 +1,6 @@
-using Tests.RunLogic.Attributes.Utilities;
+using TestInfrastructure.Attributes.Utilities;
 
-namespace Tests.RunLogic.Attributes;
+namespace TestInfrastructure.Attributes;
 
 [AttributeUsage(AttributeTargets.Assembly)]
 public class HomeworkProgressAttribute : Attribute

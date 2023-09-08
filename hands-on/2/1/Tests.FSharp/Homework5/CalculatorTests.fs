@@ -2,7 +2,7 @@
 
 open Hw5.Calculator
 open Microsoft.FSharp.Core
-open Tests.RunLogic.Attributes
+open TestInfrastructure.Attributes
 open Xunit
 
 let epsilon: decimal = 0.001m

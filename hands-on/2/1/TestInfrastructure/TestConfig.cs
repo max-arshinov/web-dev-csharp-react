@@ -1,3 +1,3 @@
-using Tests.RunLogic.Attributes;
+using TestInfrastructure.Attributes;
 
 [assembly: HomeworkProgress(Homeworks.Init)]

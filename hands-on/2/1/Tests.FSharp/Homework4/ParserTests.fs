@@ -3,7 +3,7 @@
 open System
 open Hw4.Calculator
 open Hw4.Parser
-open Tests.RunLogic.Attributes
+open TestInfrastructure.Attributes
 open Xunit
         
 [<HomeworkTheory(Homeworks.HomeWork4)>]
