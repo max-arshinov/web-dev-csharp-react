@@ -11,7 +11,7 @@ on:
       - dev
 
 jobs:
-  build:
+  test:
 
     runs-on: windows-latest
 
@@ -28,5 +28,5 @@ jobs:
         working-directory: ./hands-on/2/1
         run: dotnet build --configuration Release --no-restore
       - name: Test
-        working-directory: ./hands-on/2/1/Tests.CSharp
-        run: dotnet test --no-restore
+        working-directory: ./hands-on/2/1
+        run: dotnet test --no-restore --filter FullyQualifiedName~Tests
