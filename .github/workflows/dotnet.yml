@@ -24,4 +24,4 @@ jobs:
         run: dotnet build --configuration Release --no-restore
       - name: Test
         working-directory: ./hands-on/2/1
-        run: dotnet test --no-restore --verbosity normal
+        run: dotnet test
