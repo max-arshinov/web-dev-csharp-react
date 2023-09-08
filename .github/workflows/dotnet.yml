@@ -13,7 +13,7 @@ on:
 jobs:
   test:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
@@ -27,6 +27,9 @@ jobs:
       - name: Build
         working-directory: ./hands-on/2/1
         run: dotnet build --configuration Release --no-restore
-      - name: Test
-        working-directory: ./hands-on/2/1
-        run: dotnet test --no-restore --filter FullyQualifiedName~Tests
+      - name: Test CSharp
+        working-directory: ./hands-on/2/1/Tests.CSharp
+        run: dotnet test --no-restore
+      - name: Test FSharp
+        working-directory: ./hands-on/2/1/Tests.FSharp
+        run: dotnet test --no-restore        
