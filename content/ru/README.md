@@ -1,4 +1,29 @@
-# RU
+# Prerequisites
+
+### Теория
+1. [Программисты-оптимисты](https://habr.com/ru/post/178905/)
+2. [Джедайская техника](https://www.youtube.com/watch?v=jt3_sq8LQYM)
+3. [Память и обучение](https://www.youtube.com/watch?v=3_SVHS6t_LM)
+4. [Матрица Эйзенхауэра](https://timeweb.com/ru/community/articles/chto-takoe-matrica-eyzenhauera)
+5. [О пользе лаконичности](https://habr.com/ru/post/340434/)
+
+### Инструментарий
+В интернете представлен широкий выбор инструментов, выберите тот, с которым Вам работать удобнее всего:
+
+- [Visual Studio](https://visualstudio.microsoft.com/ru/downloads/) - IDE от компании Microsoft. Пошаговая инструкция по созданию первого приложения с помощью Visual Studio доступны на [официальном сайте Microsoft](https://visualstudio.microsoft.com/ru/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false#tutorial) и [Метаните](https://metanit.com/sharp/tutorial/1.2.php).
+- [ReSharper](https://www.jetbrains.com/resharper/) - плагин для Visual Studio от компании Jet Brains. Значительно расширяет возможности Visual Studio, но влияет на производительность среды.
+- [VS Code](https://code.visualstudio.com/docs/languages/dotnet) - легкий редактор исходного кода, работающий в Windows, macOS и Linux.
+- [JetBrains Rider](https://www.youtube.com/watch?v=rFO1zHgkS30&ab_channel=JetBrainsTV) - кросс-платформенная IDE от компании JetBrains. Предоставляет все возможности R# и многое другое. Платная, но JetBrains предоставляет бесплатные лицензии студентам.
+
+### Вопросы к семинару
+1. Когда информация переходит из краткосрочной памяти в долгосрочную?
+2. Почему за ночь нельзя выучить программу семестра?
+3. Почему в вопросах работы и обучения нужно быть лаконичным?
+4. Как пользоваться матрицей Эйзенхауэра?
+5. Кто такая обезьянка сиюминутного удовольствия, каков характер ее отношений с рациональным типом и с дедлайн-монстром?
+6. Оцените качество оценок большинства программистов? Как улучшить качество оценки?
+7. 
+# Guide
 
 1. Создайте [fork](https://docs.gitlab.com/ee/user/project/repository/forking_workflow.html) репозитория.
 2. В корне вы найдете файл `README.md`. В нём содержится список всех заданий. Переходите по ссылкам и выполняйте задания одно за другим.

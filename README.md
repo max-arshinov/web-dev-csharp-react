@@ -38,11 +38,12 @@ This course promises a rich and robust learning experience characterized by a se
 
 ## Installation and Usage
 
-To download the course materials to your local machine, you can use `git` as follows:
-
+1. fork
+2. To download the course materials to your local machine, you can use `git` as follows:
 ```bash
 git clone https://github.com/yourusername/repositoryname.git
 ```
+3. Prerequisites
 
 Go to [EN](./en/2).
 
